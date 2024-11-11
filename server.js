@@ -29,7 +29,7 @@ const app = express();
 const PORT = 7000;
 app.use(bodyParser.json({ limit: '10mb' })); // Set limit to 10MB, adjust as needed
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
-app.use(cors({ origin: 'https://xtocast1.vercel.app', credentials: true, 
+app.use(cors({ origin: '*', credentials: true, 
     methods:  ['GET', 'POST', 'PUT', 'DELETE']
  }));
 
